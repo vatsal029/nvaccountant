@@ -69,12 +69,12 @@ $(document).ready(function () {
     //     e.preventDefault();  
     // });
 
-    $('.top_header .nav-link, .banner_btns .theme_btn').click(function(){
-        $('html, body').animate({
-            scrollTop: $( $(this).attr('href') ).offset().top - 75
-        }, 500);
-        return false;
-    });
+    // $('.top_header .nav-link, .banner_btns .theme_btn').click(function(){
+    //     $('html, body').animate({
+    //         scrollTop: $( $(this).attr('href') ).offset().top - 75
+    //     }, 500);
+    //     return false;
+    // });
 
     
 });
@@ -84,23 +84,23 @@ $(window).on('scroll', function () {
     stickyHeader()
 });
 
-$(window).scroll(function() {
-    var windscroll = $(window).scrollTop();
-    if (windscroll >= 100) {
-        $('section').each(function(i) {
-    // The number at the end of the next line is how pany pixels you from the top you want it to activate.
-            if ($(this).position().top <= windscroll + 140) {
-                $('.top_header .nav-link.active').removeClass('active');
-                $('.top_header .nav-link').eq(i).addClass('active');
-            }
-        });
+// $(window).scroll(function() {
+//     var windscroll = $(window).scrollTop();
+//     if (windscroll >= 100) {
+//         $('section').each(function(i) {
+//     // The number at the end of the next line is how pany pixels you from the top you want it to activate.
+//             if ($(this).position().top <= windscroll + 140) {
+//                 $('.top_header .nav-link.active').removeClass('active');
+//                 $('.top_header .nav-link').eq(i).addClass('active');
+//             }
+//         });
 
-    } else {
+//     } else {
 
-        $('.top_header .nav-link.active').removeClass('active');
-        $('.top_header .nav-link:first').addClass('active');
-    }
-}).scroll();
+//         $('.top_header .nav-link.active').removeClass('active');
+//         $('.top_header .nav-link:first').addClass('active');
+//     }
+// }).scroll();
 
 function stickyHeader() {
     var sticky = $('.top_header');
