@@ -379,6 +379,35 @@ ul.list li img {margin-right: 13px;}
 .page_title{text-align: left; color: #fff;}
 .page_subtext{text-align: left; color: #fff; font-size: 14px;}
 
+.contact_grid {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.contact_grid_list{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.contact_icon{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EBF0FE;
+    border-radius: 5px;
+}
+
+.contact_sub_title{
+    color: #021137;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
 /* footer section */
 footer.dark_bg {background-color: #021137;}
 .top_address_bar {display: flex;border-bottom: 1px solid rgb(255 255 255 / 20%);}
