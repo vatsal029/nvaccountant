@@ -574,6 +574,7 @@ ul.list li img {margin-right: 13px;}
     background-position: center;
     background-attachment: fixed;
     position: relative;
+    text-align: center;
 }
 
 .common_cta_section:before{
@@ -603,10 +604,6 @@ ul.list li img {margin-right: 13px;}
 .cta_section_wrap h2{
     margin-bottom: 20px;
     font-size: 28px;
-}
-
-.cta_section_wrap .theme_btn{
-    margin-top: 30px;
 }
 
 /* footer section */
@@ -676,6 +673,11 @@ footer .add_content_data a:hover {opacity: 0.6;}
         font-size: 14px;
         line-height: 22px;
     }
+
+    .theme_btn {
+        padding: 12px 20px;
+        min-width: 160px;
+    }
 }
 
 
@@ -694,7 +696,7 @@ footer .add_content_data a:hover {opacity: 0.6;}
         padding: 30px 15px;
     }
     .top_address_bar .footer_col33 {
-        padding: 26px 14px;
+        padding: 26px 8px;
     }
     footer .add_content_title {
         font-size: 18px;
@@ -730,6 +732,15 @@ footer .add_content_data a:hover {opacity: 0.6;}
         min-width: 80px;
         height: 40px;
     }
+
+    .top_address_bar .footer_col33 .icon img {
+        max-height: 14px;
+        margin-right: 6px;
+    }
+
+    .top_address_bar .footer_col33 .add_content {
+        width: calc(100% - 22px);
+    }
 }
 
 @media (max-width:991px){
@@ -741,9 +752,15 @@ footer .add_content_data a:hover {opacity: 0.6;}
         padding: 0;
         box-shadow: none;
     }
+    .inner_header.top_header .navbar-toggler{
+        border: 1px solid #021137;
+    }
     .top_header .navbar-toggler .navbar-toggler-icon {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
         background-size: 24px;
+    }
+    .inner_header.top_header .navbar-toggler .navbar-toggler-icon{
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%287, 15, 55, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
     }
     .top_header .offcanvas-header {
         width: 100%;
@@ -818,8 +835,53 @@ footer .add_content_data a:hover {opacity: 0.6;}
     .footer_middle_sec .footer_newsletter {
         width: 50%;
     }
+    .top_address_bar .footer_col33 {
+        padding: 26px 4px;
+    }
     footer .add_content_title, footer .add_content_data, footer .add_content_data a {
-        font-size: 16px;
+        font-size: 13px;
+    }
+    .common_cta_section{
+        padding: 40px 0;
+    }
+
+    .section_title {
+        margin-bottom: 25px;
+    }
+
+    .top_address_bar .footer_col33 .icon img {
+        max-height: 12px;
+        margin-right: 6px;
+    }
+
+    .top_address_bar .footer_col33 .add_content {
+        width: calc(100% - 22px);
+    }
+
+    .contact_grid{
+        row-gap: 15px;
+    }
+
+    .contact_icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contact_grid_details{
+        gap: 2px;
+    }
+
+    .contact_sub_title {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .form-wrapper {
+        padding: 30px;
+    }
+
+    .map-wrapper {
+        height: 300px;
     }
 }
 @media (max-width:767px){
@@ -860,7 +922,10 @@ footer .add_content_data a:hover {opacity: 0.6;}
     }
     .top_address_bar .footer_col33 {
         width: 50%;
-        padding: 20px 12px;
+        padding: 20px 8px;
+    }
+    .top_address_bar .footer_col33 .icon img{
+        margin-right: 10px;
     }
     .top_address_bar .footer_col33:last-child {
         width: 100%;
@@ -880,6 +945,14 @@ footer .add_content_data a:hover {opacity: 0.6;}
     }
     .footer_middle_sec .newsletter_box {
         margin-top: 20px;
+    }
+
+    .our_team_inner .team_box_img {
+        margin-bottom: 12px;
+    }
+
+    .social_connect {
+        margin-top: 10px;
     }
 }
 @media (max-width: 575px){
@@ -979,5 +1052,19 @@ footer .add_content_data a:hover {opacity: 0.6;}
 
     .dotted_left_img {
         display: none;
+    }
+
+    .form-wrapper {
+        padding: 20px;
+    }
+
+    .form-wrapper .theme_btn {
+        min-width: 135px;
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .map-wrapper {
+        height: 250px;
     }
 }
