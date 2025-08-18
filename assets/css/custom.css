@@ -322,7 +322,7 @@ ul.list li img {margin-right: 13px;}
 .about_box p {font-weight: 600;}
 
 .service_section {background-image: url(../images/service-bg.png);position: relative;}
-.service_section:after {position: absolute;left: 0;right: 0;bottom: 0;width: 100%;height: 130px;background-color: #fff;content: "";z-index: 1;}
+.service_section:after {position: absolute;left: 0;right: 0;bottom: -1px;width: 100%;height: 130px;background-color: #fff;content: "";z-index: 1;}
 .dark_bg {color: #fff;}
 .center_section_title {text-align: center;width: 690px;margin-left: auto;margin-right: auto;max-width: 100%;}
 .dark_bg .section_title .sub_title {color: #fff;}
